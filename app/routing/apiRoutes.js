@@ -46,10 +46,15 @@ module.exports = function(app) {
     small = Math.min(...comparisons);
     hero = comparisons.indexOf(small);
 
+    result = {
+      name: heroes[hero].name,
+      img: heroes[hero].img
+    }
+
+    //console.log(heroes);
+
     /* console.log(comparisons);
-    console.log(small);
-    console.log(hero); */
-    console.log(heroes[hero].name);
-    console.log(heroes[hero].img);
+    console.log(hero);
+    console.log(result); */
   });
 };

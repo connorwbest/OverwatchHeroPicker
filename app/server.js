@@ -18,8 +18,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 
-require('./routing/htmlRoutes')(app);
 require('./routing/apiRoutes')(app);
+require('./routing/htmlRoutes')(app);
+
 
 
 

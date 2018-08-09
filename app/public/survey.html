@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./survey.css">
 
@@ -17,7 +17,7 @@
     <div class="card col-sm-8" id="survey">
         <form action="">
             <div class="form-group">
-                <label>1. Are you a lover or a fighter?(1 for lover, 5 for fighter)</label>
+                <label>1. Are you a lover or a fighter?(1 for all love and 5 all aggression)</label>
                 <select class="form-control" id="questionOne">
                     <option>1</option>
                     <option>2</option>
@@ -27,7 +27,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>2. Do you want to be an absolute unit?
+                <label>2. How much HP do you need to thrive?
                     <br>(1 for no HP needed and 5 for I never want to die)</label>
                 <select class="form-control" id="questionTwo">
                     <option>1</option>
@@ -38,7 +38,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>3. Can you click on the heads? (1 being track pad aim and 5 being aimbot)</label>
+                <label>3. How's your aim? (1 being track pad aim and 5 being aimbot)</label>
                 <select class="form-control" id="questionThree">
                     <option>1</option>
                     <option>2</option>
@@ -59,7 +59,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>5. How fast do you want to go? (1 for actual snail and 5 for break the sound barrier)</label>
+                <label>5. How fast do you need to go? (1 for actual snail and 5 for break the sound barrier)</label>
                 <select class="form-control" id="questionFive">
                     <option>1</option>
                     <option>2</option>
@@ -158,41 +158,39 @@
 
 
     <script type="text/javascript">
-    $('#runCalc').on('click', function(event){
-        event.preventDefault();
+        $('#runCalc').on('click', function (event) {
+            event.preventDefault();
 
-        var surveyAnswers = {
-            qOne: $('#questionOne').val(),
-            qTwo: $('#questionTwo').val(),
-            qThree: $('#questionThree').val(),
-            qFour: $('#questionFour').val(),
-            qFive: $('#questionFive').val(),
-            qSix: $('#questionSix').val(),
-            qSeven: $('#questionSeven').val(),
-            qEight: $('#questionEight').val(),
-            qNine: $('#questionNine').val(),
-            qTen: $('#questionTen').val(),
-        };
+            var surveyAnswers = {
+                qOne: $('#questionOne').val(),
+                qTwo: $('#questionTwo').val(),
+                qThree: $('#questionThree').val(),
+                qFour: $('#questionFour').val(),
+                qFive: $('#questionFive').val(),
+                qSix: $('#questionSix').val(),
+                qSeven: $('#questionSeven').val(),
+                qEight: $('#questionEight').val(),
+                qNine: $('#questionNine').val(),
+                qTen: $('#questionTen').val(),
+            };
 
-        $.post('/api/heroes', surveyAnswers)
-            .then(function(data) {
-                console.log(data);
-            })
-    })
+            $.post('/api/heroes', surveyAnswers)
+                .then(function (data) {
+                    console.log(data);
+                })
+
+             $.ajax({ url: 'http://localhost:3000/api/heroes', method: 'GET' })
+                .done(function (result) {
+                    console.log(result);
+                })  
 
 
-    function runHeroQuery(){
-        var currentUrl = window.location.origin;
+            
+        });
 
-        $.ajax({url: 'http://localhost:3000/api/heroes', method: 'GET'})
-        .done(function(heroes){
-            console.log('---------------');
-            console.log("URL: " + currentUrl + 'api/heroes');
-            console.log('---------------');
-            console.log(heroes);
-            console.log('---------------');
-        })
-    }
+
+
+
     </script>
 </body>
 
