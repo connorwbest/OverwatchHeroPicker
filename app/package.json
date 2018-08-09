@@ -1,0 +1,16 @@
+{
+  "name": "herogen",
+  "version": "1.0.0",
+  "description": "Survey for determining which ow character a user should play by comparing input values to character values",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Connor Best",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,57 @@
+#survey {
+    position: relative;
+    margin: 5vh auto 10vh auto;
+}
+
+.card {
+    padding: 15px;
+    margin: 2rem;
+    border: 2px solid #ce833d;
+    color: #fff;
+    background-color: rgba(24, 24, 24, 0.7);
+}
+
+.form-group {
+    margin: 30px;
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    border: 1px solid #ce833d;
+    margin: auto;
+}
+
+label {
+    font-size: 1.5rem;
+    background: rgba(24, 24, 24, 0.3)
+}
+
+body {
+    background-image: url(./images/surveyBG.jpg);
+    background-size: 2650px;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    background-color: rgb(58, 58, 58);
+    border: 1px solid #ce833d;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 380px;
+}
+
+.btn:hover {
+    background-color: #ce833d;
+    border: 1px solid #ce833d
+    
+}
+
+#resultImg {
+    float: left;
+    padding: 20px;
+}
+
+#heroName {
+    text-align: center;
+}

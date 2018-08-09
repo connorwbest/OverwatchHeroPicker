@@ -1,0 +1,10 @@
+1. Are you a lover or a fighter? (1 for lover, 5 for fighter) - determine dps/tank/heal
+2. Do you want to be an absolute unit? (1 for no HP needed and 5 for I never want to die) - determine beefy vs squishy
+3. Can you click on the heads? (1 being no and 5 being yes) - mechanical vs non mechanical
+4. Is being good at the game or playing an annoying/broken character more fun for you? (1 for all skill, 5 for watch the world burn) - mechanical vs non mechanical(more for borken heroes)
+5. How fast do you want to go? (1 for actual snail and 5 for Sonic) - 
+6. Do you want to protect your team or bully the opposing one? (1 for human shield and 5 for all out attack) - further separate dps from tank/ some supports
+7. Is your usual play style selfish or selfless? (1 being extremely selfish and 5 being saint-like)
+8. How much anime do you watch? (1 for anime is lame and 5 for absolute weeb)
+9. Do you want to have an obvious impact or be the unsung hero?(1 for Play of the Game every round and 5 for just here to help)
+10. How much time are you willing to put in to master a hero? (1 for none at all and 5 for time is but a human construct)

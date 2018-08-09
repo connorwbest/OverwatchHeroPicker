@@ -1,0 +1,24 @@
+#header {
+    background-color: rgba(24, 24, 24, 0.5);
+    color: #fff;
+    position: relative;
+    top: 10vh;
+    border: 2px solid #ce833d;
+}
+
+body {
+    background-image: url(./images/OWbackground.jpg);
+}
+
+.btn {
+    background-color: rgb(58, 58, 58);
+    border: 1px solid #ce833d;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ce833d;
+    border: 1px solid #ce833d
+    
+}
+
