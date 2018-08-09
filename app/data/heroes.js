@@ -141,5 +141,11 @@ var heroes = [
     },
 ]
 
+var results = [{
+    name: 'placeholder',
+    img: 'image'
+}];
+
 
 exports.heroes = heroes;
+exports.results = results;

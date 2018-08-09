@@ -138,7 +138,7 @@
                 </div>
                 <div class="modal-body">
                     <img src="" alt="" id="resultImg">
-                    <h2 id="heroName">Ana</h2>
+                    <h2 id="heroName"></h2>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -179,10 +179,15 @@
                     console.log(data);
                 })
 
-             $.ajax({ url: 'http://localhost:3000/api/heroes', method: 'GET' })
+             $.ajax({ url: 'http://localhost:3000/api/result', method: 'GET' })
                 .done(function (result) {
-                    console.log(result);
-                })  
+                    console.log(result.name);
+                    console.log(result.img);
+
+                    $('#heroName').text(result.name + '!');
+                    $('#resultImg').attr('src', './images/' + result.img);
+                    
+                })
 
 
             

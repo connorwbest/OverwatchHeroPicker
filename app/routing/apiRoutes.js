@@ -2,11 +2,16 @@ var express = require("express");
 var path = require("path");
 var heroList = require("../data/heroes");
 var heroes = heroList.heroes;
+var results = heroList.results;
 
 module.exports = function(app) {
   app.get("/api/heroes", function(req, res) {
     return res.json(heroes);
-  });
+});
+
+app.get("/api/result", function(req, res) {
+  return res.json(results);
+});
 
   app.post("/api/heroes", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
@@ -46,7 +51,7 @@ module.exports = function(app) {
     small = Math.min(...comparisons);
     hero = comparisons.indexOf(small);
 
-    result = {
+    results = {
       name: heroes[hero].name,
       img: heroes[hero].img
     }
