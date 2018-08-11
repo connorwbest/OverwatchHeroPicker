@@ -29,7 +29,7 @@ label {
 
 body {
     background-image: url(./images/surveyBG.jpg);
-    background-size: 2650px;
+    background-size: 2700px;
     background-repeat: no-repeat;
 }
 
@@ -38,20 +38,58 @@ body {
     border: 1px solid #ce833d;
     text-decoration: none;
     text-align: center;
-    margin-left: 380px;
+    width: 25%;
+    display: block;
+
 }
 
 .btn:hover {
     background-color: #ce833d;
-    border: 1px solid #ce833d
+    border: 1px solid #ce833d;
     
 }
 
 #resultImg {
     float: left;
-    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ce833d;
+    border-radius: 10px;
 }
 
 #heroName {
     text-align: center;
+    font-size: 3rem;
+    margin-top: 12vh;
+}
+
+.modal-content {
+    background-image: url(./images/OWbackground.jpg)
+    
+}
+
+.modal-body {
+    border: 2px solid #ce833d;
+    border-top: none;
+    border-bottom: none;
+    color: #fff;
+}
+
+.modal-header {
+    border: 2px solid #ce833d;
+    border-bottom: none;
+    color: #fff;
+}
+
+.modal-footer {
+    border: 2px solid #ce833d;
+    border-top: none;
+}
+
+#modalBtn {
+    text-align: center;
+    background: #ce833d;
+}
+
+.close {
+    color: #fff;
 }

@@ -8,6 +8,8 @@
 
 body {
     background-image: url(./images/OWbackground.jpg);
+    background-size: 2500px;
+
 }
 
 .btn {
@@ -21,4 +23,5 @@ body {
     border: 1px solid #ce833d
     
 }
+
 
